@@ -1,4 +1,4 @@
-const myResponse = {
+const videoFeedResponse = {
   "data": [
     {
       "contentId": "61f7de280df8684e5ac295f8",
@@ -226,40 +226,3 @@ const myResponse = {
     }
   ]
 };
-
-// create class for the data
-class VideoFeedResponse {
-  final String contentId;
-  final String caption;
-  final String thumbnail;
-  final String url;
-  final int views;
-  final int likes;
-  final String createdAt;
-
-  VideoFeedResponse({
-    required this.contentId,
-    required this.caption,
-    required this.thumbnail,
-    required this.url,
-    required this.views,
-    required this.likes,
-    required this.createdAt,
-  });
-
-  factory VideoFeedResponse.fromJson(Map<String, dynamic> json) {
-    return VideoFeedResponse(
-      contentId: json['contentId'],
-      caption: json['caption'],
-      thumbnail: json['thumbnail'],
-      url: json['url'],
-      views: json['views'],
-      likes: json['likes'],
-      createdAt: json['createdAt'],
-    );
-  }
-
-  @override
-  String toString() =>
-      'VideoFeedResponse(contentId: $contentId, caption: $caption, thumbnail: $thumbnail, url: $url, views: $views, likes: $likes, createdAt: $createdAt)';
-}
