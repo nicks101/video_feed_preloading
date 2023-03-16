@@ -1,16 +1,19 @@
-# video_feed_app
+# Short Video App like Tik-Tok
 
-A new Flutter project.
+In this Flutter application, BLoC state management to create a vertical video page like TikTok. 
+Videos are displayed them in a scrollable view. 
+There is also preloading of videos to ensure a seamless video viewing experience.
 
-## Getting Started
+## Sample Video
 
-This project is a starting point for a Flutter application.
+<video width="400" height="500" controls>
+  <source src="example_media/video_feed_media.mov" type="video/mp4">
+</video>
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Improvements
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [ ] If user scrolls too fast, the video will not be loaded. This can be done by increasing the number of videos that are preloaded.
+- [ ] Add pagination with API call to load more videos when user scrolls near to the end of the list. 
+  - This can be done inside the `isolates`, so that the UI thread is not blocked.
+- [ ] Show appropriate error messages with a retry button when there is an error in loading videos.
