@@ -6,7 +6,9 @@ There is also preloading of videos to ensure a seamless video viewing experience
 
 ## Output Demo Video
 
-![Output sample](example_media/video_feed_media.gif)
+<!-- ![Output sample](example_media/video_feed_media.gif) -->
+<img src="example_media/video_feed_media.gif" width="290" height="500"/>
+
 
 ## Improvements
 
