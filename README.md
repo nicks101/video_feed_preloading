@@ -4,12 +4,9 @@ In this Flutter application, BLoC state management to create a vertical video pa
 Videos are displayed them in a scrollable view. 
 There is also preloading of videos to ensure a seamless video viewing experience.
 
-## Sample Video
+## Output Demo Video
 
-<video width="400" height="500" controls>
-  <source src="example_media/video_feed_media.mov" type="video/mp4">
-</video>
-
+![Output sample](example_media/video_feed_media.gif)
 
 ## Improvements
 
